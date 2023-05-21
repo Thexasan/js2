@@ -158,3 +158,92 @@
 // console.log(range(2,4))
 
 //hw====================================
+//1
+// function oc(...rest){
+//     return rest.reduce((a,b)=>a.concat(b))
+// }
+// console.log(oc([1,2,3,4],[5,6,7,8]))
+
+//2
+// function secondLargest(arr) {
+//     let sortedArr = arr.sort(function(a, b){return b-a});
+//     return sortedArr[1];
+//   }
+  
+//   console.log(secondLargest([10, 40, 30, 20, 50])); 
+//   console.log(secondLargest([25, 143, 89, 13, 105])); 
+
+//3
+// function comp(arr){
+//     return arr.filter(Boolean)
+// }
+// console.log(comp([0,1,2,3,'',undefined]))
+
+//4
+// function get(a,b){
+//     let arr = []
+//     for(let i = a;i<=a*b;i++){
+//         if(i%7==0){
+//             arr.push(i)
+//         }
+//     }
+//     return arr
+// }
+// console.log(get(7,5))
+
+//5
+// function marafon(arr){
+//    let a = arr.reduce((a,b)=>a+b)
+//    return a==25
+// }
+// console.log(marafon([1,2,3,4,15]))
+
+//6
+// function mirror(arr){
+//     return arr.concat(arr.slice(0,arr.length-1).reverse())
+// }
+// console.log(mirror([1,2,3,4]))
+
+//7
+// function ind(arr){
+//     return arr.map((el,ind)=>{
+//         return el*ind
+//     }).reduce((a,b)=>a+b)
+// }
+// console.log(ind([1,2,3,4,5]))
+
+//8
+// function nne(arr,str){
+//     if(str=='Asc'){
+//         return arr.sort((a, b) => a-b)
+//     }else if(str=='Des'){
+//         return arr.sort((a, b) => b-a)
+//     }else{
+//         return arr
+//     }
+// }
+// console.log(nne([4,5,2,1],'Asc'))
+
+//9
+// function find(arr){
+//     return arr.findIndex(e => isNaN(e))
+// }
+// console.log(find([1,2,NaN]))
+
+//10
+// function rev(n){
+//     let a = n.toString().split('').reverse()
+//     return a.map((e)=>+e)
+// }
+// console.log(rev(12345678))
+
+// function mao(arr){
+//     let a = []
+//     for(let i = 0 ; i < arr.length; i++){
+//         if(!a.includes(arr[i])){
+//             a.push(arr[i])
+//         }
+//     }
+//     return a
+// }
+// console.log(mao([1,2,2,1]))
