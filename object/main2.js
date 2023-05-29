@@ -214,8 +214,15 @@
 // {
 //     let newObj = {}
 //     for(let key in obj){
+//         // console.log(key)
 //          newObj[obj[key]]= key
 //         }
 //         return newObj
 // }
 // console.log(invert({ "z": "q", "w": "f" }))
+
+
+// function test(obj){
+//     return Object.fromEntries(Object.entries(obj).map((e)=> e.reverse()))
+// }
+// console.log(test({a:10,b:20,c:30}))
