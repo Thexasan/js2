@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* color: #fff; */
+}
+
+body{
+    background-image:radial-gradient(blue,green,pink) ;
+}
+
+.header {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.divh1{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.h1{
+    color:#fff;
+}
+
+.h1:hover{
+    border-bottom: 1px solid black;
+    transition: all .7s;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.img {
+  width: 60%;
+  margin-top: 30px;
+}
+
+.box {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cont {
+  text-align: center;
+  width: 660px;
+}
+
+.desc {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btnAll,
+.btnBreakfast,
+.btnLunch,
+.btnShakes,
+.btnDinner {
+    padding: 11px 17px 11px 17px;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+.btnAll:hover,
+.btnBreakfast:hover,
+.btnLunch:hover,
+.btnShakes:hover,
+.btnDinner:hover{
+    background-color: aqua;
+    border: outset 2px 2px 5px black;
+    scale: 1.1;
+    transition: all .7s;
+
+}
