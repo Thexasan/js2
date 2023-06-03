@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./all.css">
+</head>
+<body>
+    <section class="section2">
+        <p>dark</p>
+        <label class="switch">
+            <input type="checkbox" class="checkbox">
+            <div class="slider">     
+            </div>
+        </label>
+        <p>light</p>
+    </section>
+
+    <header class="header">
+        <h1>To do list</h1>
+       <h1 class="qwe" style="font-size: 40px;">+</h1>
+       <div>
+           <input type="checkbox" name="check" placeholder="hide" >
+           <label for="check">Hide</label>
+       </div>
+       <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Add User</p>
+          <label for="name">Name:</label><br>
+          <input type="text" name="name" class="inpName"><br><br>
+          <label for="age">Age:</label><br>
+          <input type="text" name="age" class="inpAge"><br><br>
+          <label for="mar">Married:</label><br>
+          <input type="text" name="mar" class="inpMar"><br><br>
+          <button class="btn-add">Add</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section ">
+
+        <table class="table">
+            <thead>
+                <tr class="tr">
+                    <th class="th">Id</th>
+                    <th class="th">FullName</th>
+                    <th class="th">Age</th>
+                    <th class="th">Married</th>
+                    <th class="th">Actions</th>
+                </tr>
+            </thead>
+
+            <tbody class="userTable">
+
+            </tbody>
+        </table>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>

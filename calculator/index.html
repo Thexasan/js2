@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./all (2).css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="div-header">
+        <img class="img1" src="./img/splash_dark.png" alt="" />
+        <h1 class="h1">Caculator</h1>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="calculator">
+        <div class="div-calc">
+          <h1 style="color: #fefefe">Calculator</h1>
+          <h1 class="span">&times;</h1>
+        </div>
+        <input type="text" id="display" disabled />
+        <br />
+        <button onclick="clear()">C</button>
+        <button onclick="appendDigit('()')">()</button>
+        <button onclick="press('%')">%</button>
+        <button onclick="press('/')">/</button>
+        <br />
+        <button onclick="appendDigit('7')">7</button>
+        <button onclick="appendDigit('8')">8</button>
+        <button onclick="appendDigit('9')">9</button>
+        <button onclick="press(' + ')">+</button>
+        <br />
+        <button onclick="appendDigit('4')">4</button>
+        <button onclick="appendDigit('5')">5</button>
+        <button onclick="appendDigit('6')">6</button>
+        <button onclick="press(' - ')">-</button>
+        <br />
+        <button onclick="appendDigit('1')">1</button>
+        <button onclick="appendDigit('2')">2</button>
+        <button onclick="appendDigit('3')">3</button>
+        <button onclick="press(' * ')">*</button>
+        <br />
+        <button id="decimal">.</button>
+        <button onclick="appendDigit('0')">0</button>
+        <button class="plus-minus">+/-</button>
+        <button onclick="calculate()">=</button>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
