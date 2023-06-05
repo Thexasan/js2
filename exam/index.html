@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>User list</h1>
+        <button class="newBtn">+ New</button>
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Add New User:</p>
+      <legend for="img">Img:</legend>
+      <input type="text" name="img" class="inpImg"><br><br>
+      <legend for="name">Name:</legend>
+      <input type="text" name="name" class="inpName"><br><br>
+      <legend for="email">email:</legend>
+      <input type="email" name="email" class="inpEmail"><br><br>
+
+      <input type="checkbox" class="check1">
+      <label for="check1">Active</label>
+      <input type="checkbox" class="check2">
+      <label for="check2">unActive</label>
+      <br>
+      <label for="function"></label>
+      <select name="function" id="function" onchange="handleChange()">
+          <option value="active">Admin</option>
+          <option value="unActive">Operator</option>
+          <option value="all" selected>USer</option>
+      </select>
+
+      <label for="userTag"></label>
+      <select name="userTag" id="userTag" onchange="handleChange()">
+          <option value="active">Developer </option>
+          <option value="unActive">designer</option>
+          <option value="all" selected>programmer</option>
+      </select><br>
+      <button class="btnAdd">Save</button>
+    </div>
+  
+  </div>
+    </header>
+
+    <fieldset  style="width: fit-content;">
+        <legend>Status</legend>
+        <label for="usersSelect"></label>
+        <select name="usersSelect" id="usersSelect" class="user" onchange="handleChange()">
+            <option value="active">Active users</option>
+            <option value="unActive">Unactive users</option>
+            <option value="all" selected>All users</option>
+        </select>
+    </fieldset>
+
+
+    <section class="section">
+        <div class="sec-div">
+            <h1></h1>
+            <h1>Name</h1>
+            <h1>Function</h1>
+            <h1>Status</h1>
+            <h1>Tag</h1>
+            <h1></h1>
+        </div>
+    </section>
+
+    <section class="section2 box">
+        
+    </section>
+
+    <!-- The Modal -->
+<div id="myModall" class="modall">
+
+    <!-- Modal content -->
+    <div class="modal-content2">
+      <span class="closee">&times;</span>
+      <a href="#" class="btn-info">View Profile</a><br><br>
+      <a href="#" class="btn-edit">Edit</a><br><br>
+      <a href="#" class="btn-delete">delete</a><br>
+    </div>
+  
+  </div>
+
+  <!-- The Modal -->
+<div id="myModal1" class="modal1">
+
+    <!-- Modal content -->
+    <div class="modal-content1">
+      <span class="close1">&times;</span>
+      <p>Edit USer</p>
+      <legend for="img">Img:</legend>
+      <input type="text" name="img" class="inpImgEdit"><br><br>
+      <legend for="name">Name:</legend>
+      <input type="text" name="name" class="inpNameEdit"><br><br>
+      <legend for="email">email:</legend>
+      <input type="email" name="email" class="inpEmailEDit"><br><br>
+
+      <input type="checkbox" class="checkEdit1">
+      <label for="check1">Active</label>
+      <input type="checkbox" class="checkEdit2">
+      <label for="check2">unActive</label>
+      <br>
+      <label for="function"></label>
+      <select name="function" id="functionEdit" onchange="handleChange()">
+          <option value="active">Admin</option>
+          <option value="unActive">Operator</option>
+          <option value="all" selected>USer</option>
+      </select>
+
+      <label for="userTag"></label>
+      <select name="userTag" id="userTagEdit" onchange="handleChange()">
+          <option value="active">Developer </option>
+          <option value="unActive">designer</option>
+          <option value="all" selected>programmer</option>
+      </select><br>
+      <button class="btnAEdit">Save</button>
+    </div>
+  
+  </div>
+
+
+    </div>
+  
+  </div>
+
+
+    <div id="myModal5" class="modal5">
+
+        <!-- Modal content -->
+        <div class="modal-content5">
+          <span class="close5">&times;</span>
+          <p>info.</p>
+          
+  <div class="box2">
+        </div>
+      
+      </div>
+  </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -192,9 +192,9 @@ function get(){
 
 get()
 
-hide.onclick=(event)=>{
+hide.onclick=(erem)=>{
    let copyData = [...data]
-  if(event.target.checked){
+  if(erem.target.checked){
     // console.log(event.target.checked)
       copyData= copyData.filter((el)=>{
         return el.isComplete!=false
